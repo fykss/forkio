@@ -1,0 +1,83 @@
+@import "variables";
+
+@media (min-width: 320px) {
+  .section {
+    background-color: $greyBackground;
+    overflow: hidden;
+
+    .container {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 1200px;
+
+      .we-offer {
+        .heading {
+          font-size: $font*2;
+          color: $purple;
+          margin: 34px 30px;
+          line-height: 28px;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .content {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+
+
+          &__heading {
+            margin: 29px 0 21px 0;
+            font-size: $font;
+            color: #323232;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          &__text {
+            font-size: $font -2;
+            color: $textColor;
+            margin: 0 20px 44px 20px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            line-height: 15.406px;
+          }
+        }
+
+          .editor {
+            height: 381px;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+  }
+
+.section-users {
+  background-color: #fff;
+
+.users {
+  text-align: center;
+
+    .users__div {
+      padding: 20px;
+      width: 90vw;
+
+      &__text {
+        width: 80vw;
+        margin: 40px;
+        padding: 40px;
+      }
+      &__heading {
+        display: inline-block;
+      }
+
+      &__img {
+
+      }
+    }
+}
+  }
+
