@@ -1,0 +1,27 @@
+
+.section-users {
+  background-color: #fff;
+
+  .users {
+    text-align: center;
+
+    .users__div {
+      padding: 20px;
+      width: 90vw;
+
+      &__text {
+
+        width: 80vw;
+        margin: 40px;
+        padding: 40px;
+      }
+      &__heading {
+        display: inline-block;
+      }
+
+      &__img {
+
+      }
+    }
+  }
+}
