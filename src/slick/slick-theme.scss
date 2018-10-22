@@ -8,13 +8,13 @@
 // "\2022" outputs ascii character "•"
 
 $slick-font-path: "./fonts/" !default;
-$slick-font-family: "FontAwesome" !default;
+$slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: #8d81ac !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\f104" !default;
-$slick-next-character: "\f105" !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -101,10 +101,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: 5px;
+    left: -25px;
     [dir="rtl"] & {
         left: auto;
-        right: 5px;
+        right: -25px;
     }
     &:before {
         content: $slick-prev-character;
@@ -115,9 +115,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 5px;
+    right: -25px;
     [dir="rtl"] & {
-        left: 5px;
+        left: -25px;
         right: auto;
     }
     &:before {
@@ -127,4 +127,3 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
-

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.users').slick({
-        // prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        // nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        prevArrow:`<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>`,
+        nextArrow:`<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>`,
         dots: false,
         infinite: true,
         centerMode: true,
@@ -10,8 +10,8 @@ $(document).ready(function(){
         // speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // cssEase: 'linear',
-        variableWidth: false,
+        cssEase: 'linear',
+        variableWidth: true,
         variableHeight: true,
         responsive: [
             {
@@ -22,7 +22,7 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
-                    variableWidth: false,
+                    // variableWidth: true,
                     focusOnSelect: false
                 }
             },
