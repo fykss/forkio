@@ -34,8 +34,8 @@ const path = {
         scss_modules: './src/scss/**/*.scss',
         /*
                 scss_all:     './src/scss/!**!/!*.scss',*/
-        js:           './src/js/script.js',
-        js_modules:   './src/js/modules/*.js',
+        js:           './src/js/*.js',
+        js_modules:   './src/js/**/*.js',
         img:          './src/img/**/*'
     }
 };
