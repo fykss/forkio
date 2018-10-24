@@ -3,11 +3,12 @@ $(document).ready(function(){
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         dots: false,
+        arrows: true,
         infinite: true,
         centerMode: true,
         autoplay: false,
         mobileFirst:true,
-        // speed: 300,
+        speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: 'linear',
@@ -22,7 +23,7 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true,
-                    // variableWidth: true,
+                    variableWidth: true,
                     focusOnSelect: false
                 }
             },
@@ -44,8 +45,8 @@ $(document).ready(function(){
                     centerMode: true,
                     slidesToShow: 1,
                     slidesToScroll: 1
-            }
-                },
+                }
+            },
             {
                 breakpoint: 320,
                 settings: {
@@ -57,9 +58,6 @@ $(document).ready(function(){
                 }
             }
         ]
+
+    });
 });
-});
-// $('.your-class').slick({
-//     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-//     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-// });

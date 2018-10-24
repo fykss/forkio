@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+@media only screen and (min-width: 320px) {
   .section {
     background-color: $greyBackground;
     overflow: hidden;
@@ -52,3 +52,51 @@
     }
   }
 }
+
+@media only screen and (min-width: 401px) {
+  .section {
+    .container {
+      .get-editor {
+        .heading {
+          font-size: $font*3-6;
+          line-height: 40px;
+        }
+
+        .content {
+          //display: flex;
+          //justify-content: center;
+          //flex-direction: row;
+          position: relative;
+
+          &__heading {
+            margin: 29px 0 21px 0;
+            font-size: $font;
+            color: #323232;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          &__text {
+            font-size: $font -2;
+            color: $textColor;
+            margin: 0 20px 44px 20px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            line-height: 15.406px;
+          }
+
+          &__img {
+          position: absolute;
+            left: 0;
+          }
+        }
+
+        .editor {
+          height: 381px;
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+
+    }

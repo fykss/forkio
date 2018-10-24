@@ -1,27 +1,41 @@
-
 .section-users {
-  background-color: #fff;
-
-  .users {
-    text-align: center;
-
-    .users__div {
-      padding: 20px;
-      width: 90vw;
-
-      &__text {
-
-        width: 80vw;
-        margin: 40px;
-        padding: 40px;
+.container {
+  .slider {
+    width: 100vw;
+    .users {
+   text-align: center;
+   margin: 40px 0;
+      //overflow: hidden;
+      //display: flex;
+      //justify-content: center;
+      //flex-direction: column;
+      //flex-wrap: wrap;
+      //align-items: center;
+      &__nick {
+        display: block;
+        margin: 20px;
       }
       &__heading {
-        display: inline-block;
+        //display: block;
+      }
+      .slick-slide
+      {
+        width: 100vw;
+      }
+      .slick-track {
+        width: 50px
       }
 
       &__img {
+        display: inline-block;
 
+      }
+      &__text {
+        //display: inline-block;
+        width: 60vw;
+        margin: 0 auto;
       }
     }
   }
+}
 }

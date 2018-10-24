@@ -39,8 +39,7 @@
 
             _.defaults = {
                 accessibility: true,
-                adaptiveHeight: true,
-                adaptiveWidth: true,
+                adaptiveHeight: false,
                 appendArrows: $(element),
                 appendDots: $(element),
                 arrows: true,
@@ -50,7 +49,7 @@
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
-                centerPadding: '5px',
+                centerPadding: '50px',
                 cssEase: 'ease',
                 customPaging: function(slider, i) {
                     return $('<button type="button" />').text(i + 1);

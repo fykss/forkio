@@ -1,6 +1,5 @@
-@import "common/_variables.scss";
-@import "common/_reset.scss";
+@import "common/variables";
+@import "common/reset-src";
 
-@import "modules/get-editor/_get-editor.scss";
-@import "modules/users/_users.scss";
-
+@import "modules/get-editor/get-editor";
+@import "modules/users/users";
