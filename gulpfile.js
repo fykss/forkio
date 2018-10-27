@@ -34,8 +34,8 @@ const path = {
         scss_modules: './src/scss/**/*.scss',
         /*
                 scss_all:     './src/scss/!**!/!*.scss',*/
-        js:           './src/js/script.js',
-        js_modules:   './src/js/modules/*.js',
+        js:           './src/js/script/script.js',
+        js_modules:   './src/js/**/*.js',
         img:          './src/img/**/*'
     }
 };
@@ -75,13 +75,25 @@ gulp.task('css', function () {
 
 
 
+// gulp.task('js', function () {
+//     return gulp.src(path.src.js) //Находит script.js файл
+//         .pipe(rigger())
+//         .pipe(plumber())
+//         .pipe(uglify()) //Сжатие js
+//         .pipe(gulp.dest(path.dist.js)) //Выплюнем готовый файл в build
+// });
+
 gulp.task('js', function () {
-    return gulp.src(path.src.js) //Находит main.js файл
+    return gulp.src(['node_modules/jquery/dist/jquery.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
+        './src/js/script/script.js']) //Находит main.js файл
         .pipe(rigger())
         .pipe(plumber())
+        .pipe(concat('./libs/libs.min.js'))
         .pipe(uglify()) //Сжатие js
         .pipe(gulp.dest(path.dist.js)) //Выплюнем готовый файл в build
 });
+
 
 gulp.task('img', function(){
     return gulp.src(path.src.img)

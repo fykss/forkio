@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.users').slick({
-        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
         dots: false,
         arrows: true,
         infinite: true,

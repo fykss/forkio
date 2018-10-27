@@ -1,5 +1,7 @@
 @import "common/variables";
 @import "common/reset-src";
+//@import "common/mixins";
 
-@import "modules/get-editor/get-editor";
+@import "modules/features/features";
 @import "modules/users/users";
+@import "modules/footer/footer";

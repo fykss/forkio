@@ -1,0 +1,198 @@
+@media only screen and (min-width: 320px) {
+  .section-features {
+    background-color: $greyBackground;
+    overflow: hidden;
+
+    .container {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 1200px;
+
+      .features {
+        .features-heading {
+          &__heading {
+            font-size: $font*2;
+            color: $purple;
+            margin: 34px 30px;
+            line-height: 28px;
+            font-weight: 700;
+            text-align: center;
+          }
+        }
+
+          .features-content {
+            .features-items {
+              display: flex;
+              justify-content: center;
+              //flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center;
+
+              .features-items-about {
+                &__heading {
+                  margin: 29px 0 21px 0;
+                  text-align: center;
+                  font-size: $font;
+                  color: #323232;
+                  font-weight: 400;
+                  font-family: 'Montserrat', sans-serif;
+                }
+
+                &__text {
+                  font-size: $font -2;
+                  color: $textColor;
+                  margin: 0 20px 44px 20px;
+                  font-family: 'Lato', sans-serif;
+                  line-height: 15.406px;
+                }
+              }
+            }
+          }
+
+          .features-editor {
+            height: 381px;
+            //position: absolute;
+            //right: -240px;
+            //bottom: 0;
+            //width: 700px;
+            margin: 13px 0 13px 0;
+          }
+        }
+      }
+    }
+  }
+
+
+@media only screen and (min-width: 401px) {
+  .section-features {
+    .container {
+      .features {
+        .features-heading {
+          &__heading {
+            font-size: $font*3-6;
+            line-height: 40px;
+          }
+        }
+
+        .features-content {
+          .features-items {
+            flex-wrap: nowrap;
+
+            .features-items-img {
+              display: flex;
+              justify-content: center;
+              min-width: 111px;
+              margin-top: 0;
+            }
+
+            .features-items-about {
+
+              &__heading {
+                text-align: left;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        .features-editor {
+            height: 519px;
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .section-features {
+    overflow: hidden;
+    position: relative;
+    .container {
+      .features {
+        .features-heading {
+          &__heading {
+            font-size: $font*3-6;
+            line-height: 40px;
+          }
+        }
+
+        .features-content {
+          .features-items {
+            flex-wrap: nowrap;
+
+            .features-items-img {
+              display: flex;
+              justify-content: center;
+              min-width: 111px;
+              margin-top: 0;
+            }
+
+            .features-items-about {
+
+              &__heading {
+                text-align: left;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        .features-editor {
+          //position: absolute;
+          height: 519px;
+          width: 100%;
+          float: right;
+          //right: -240px;
+          bottom: 0;
+
+          //width: 50%;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .section-features {
+    .container {
+      .features {
+        overflow: hidden;
+        .features-heading {
+          &__heading {
+            font-size: $font*3;
+            line-height: 15px;
+            float: right;
+          }
+        }
+
+        .features-content {
+          float: left;
+          width: 50%;
+          .features-items {
+            //flex-wrap: wrap;
+
+
+            .features-items-img {
+              //display: flex;
+              //justify-content: center;
+              min-width: 111px;
+              //margin-top: 0;
+            }
+
+            .features-items-about {
+
+              &__heading {
+                text-align: left;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        .features-editor {
+          height: 519px;
+          float: right;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
