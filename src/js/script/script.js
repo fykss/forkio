@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    $('.users').slick({
+    $('.users').slick()({
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         dots: false,
-        arrows: true,
         infinite: true,
         centerMode: true,
         autoplay: false,
@@ -12,6 +11,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         cssEase: 'linear',
+
+
         variableWidth: true,
         variableHeight: true,
         responsive: [

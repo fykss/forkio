@@ -76,9 +76,7 @@ gulp.task('css', function () {
 
 
 gulp.task('js', function () {
-    return gulp.src(['node_modules/jquery/dist/jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js',
-        './src/js/script/script.js']) //Находит main.js файл
+    return gulp.src('src/**/*.js') //Находит main.js файл
         .pipe(rigger())
         .pipe(plumber())
         .pipe(concat('./libs/libs.min.js'))
