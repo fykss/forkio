@@ -1,8 +1,7 @@
 document.addEventListener('click', function(e){
     if (e.target.closest('.header-navbar-toggle')) {
         document.getElementsByClassName('header-navbar')[0].classList.toggle('active')
-        // $('.header-navbar-menu').css('display', 'flex');
-        // $('.header-navbar-menu').css('flex-direction', 'column');
+        //
     }
 });
 
