@@ -13,25 +13,34 @@
     align-items: center;
   }
 
-  .header-container {
+  .header__navbar {
     display: flex;
     justify-content: space-between;
   }
 
 
-  .header-logo {
+  .header__navbar-logo {
     margin-left: 16px;
   }
 
-  .header-logo,.header-button {
+  .header__navbar-logo,.header__navbar-button {
     margin-top: 32px;
   }
 
-  .header-logo span {
+  .header__navbar-logo span {
     display: none;
   }
 
-  .header-button {
+  .header__navbar-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__navbar-menu1200 {
+    display: none;
+  }
+
+  .header__navbar-button {
     width: 119px;
     height: 37px;
     color: #fff;
@@ -42,12 +51,13 @@
     border-radius: 20px;
     cursor: pointer;
   }
-  .header-button:hover {
-    background-color: #716590;
+  .header__navbar-button:hover {
+    background-color: #fff;
+    color: $purple;
   }
   
 
-  .header-navbar-toggle {
+  .header__navbar-nav-toggle {
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -83,7 +93,7 @@
     transform: rotate(-45deg);
   }
 
-  .header-navbar-menu {
+  .header__navbar-nav-menu {
     position: absolute;
     top: 103px;
     //left: 0;
@@ -97,7 +107,7 @@
     justify-content: space-around;
   }
 
-  .header-navbar-menu a {
+  .header__navbar-nav-menu a {
     font-size: 30px;
     color: #ffffff;
     font-weight: 400;
@@ -106,7 +116,7 @@
     border-bottom: 1px Solid #3b3b3b;
   }
 
-  .header-navbar-menu a:hover::before {
+  .header__navbar-nav-menu a:hover::before {
     content: '';
     width: 4px;
     height: 53px;
@@ -115,28 +125,28 @@
     background-color: $purple;
   }
 
-  .header-navbar-menu a:hover {
+  .header__navbar-nav-menu a:hover {
     color: $purple;
   }
 
-  .active .header-navbar-menu {
+  .active .header__navbar-nav-menu {
     right: 0;
   }
 
-  .header-navbar-menu-2 {
+  .header__navbar-nav-menu768 {
     display: none;
   }
-  .header-navbar-menu-2 a {
+  .header__navbar-nav-menu768 a {
     color: $purple;
   }
 }
 
 @media only screen and (min-width: 401px) {
-  .header-logo {
+  .header__navbar-logo {
     margin-left: 25px;
   }
 
-  .header-logo span{
+  .header__navbar-logo span{
     display: inline;
     padding-left: 13px;
     font-family: 'Lato', sans-serif;
@@ -145,28 +155,28 @@
     font-weight: 700;
   }
 
-  .header-logo,.header-button {
+  .header__navbar-logo,.header__navbar-button {
     margin-top: 26px;
   }
 
-  .header-button {
+  .header__navbar-button {
     width: 150px;
     height: 48px;
     font-size: $font+1;
     border-radius: 25px;
   }
 
-  .header-navbar-toggle {
+  .header__navbar-nav-toggle {
     margin-right: 27px;
     margin-top: 38px;
   }
 
-  .header-navbar-menu {
+  .header__navbar-nav-menu {
     right: -480px;
     height: 534px;
   }
 
-  .header-navbar-menu a {
+  .header__navbar-nav-menu a {
     font-size: $font*2;
     height: 122px;
     padding-left: 32px;
@@ -183,32 +193,32 @@
     align-items: inherit;
   }
 
-  .header-logo img {
+  .header__navbar-logo img {
     width: 43px;
     height: 41px;
   }
 
-  .header-logo span {
+  .header__navbar-logo span {
     margin-top: 8px;
   }
 
-  .header-button {
+  .header__navbar-button {
     width: 145px;
     height: 38px;
     margin-right: 20px;
     font-size: $font;
   }
 
-  .header-navbar {
+  .header__navbar-nav {
     display: none;
   }
 
-  .header-navbar-2 {
+  .header__navbar-nav768 {
     max-width: 570px;
     margin: 0 auto;
   }
 
-  .header-navbar-menu-2 {
+  .header__navbar-nav-menu768 {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -217,7 +227,60 @@
     margin-right: 25px;
   }
 
-  .header-navbar-menu-2 a:hover {
-    color: #716590;
+  .header__navbar-nav-menu768 a:hover {
+    color: #fff;
   }
 }
+
+@media only screen and (min-width: 993px) {
+  .header {
+    height: 100px;
+  }
+
+  .header__navbar {
+    max-width: 1200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header__navbar-logo,.header__navbar-logo span {
+    margin: 0;
+  }
+
+  .header__navbar-menu {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__navbar-button {
+    margin: 0;
+  }
+
+  .header__navbar-nav768 {
+    display: none;
+  }
+
+  .header__navbar-menu1200 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .header__navbar-menu1200 a {
+    margin-right: 58px;
+    color: $purple;
+    font-weight: 700;
+  }
+
+  .header__navbar-button:hover {
+    background-color: #fff;
+    color: $purple;
+  }
+
+  .header__navbar-menu1200 a:hover {
+    color: #fff;
+  }
+}
+

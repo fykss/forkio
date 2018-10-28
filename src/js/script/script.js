@@ -1,6 +1,6 @@
 document.addEventListener('click', function(e){
-    if (e.target.closest('.header-navbar-toggle')) {
-        document.getElementsByClassName('header-navbar')[0].classList.toggle('active')
+    if (e.target.closest('.header__navbar-nav-toggle')) {
+        document.getElementsByClassName('header__navbar-nav')[0].classList.toggle('active')
         //
     }
 });
