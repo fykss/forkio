@@ -1,3 +1,12 @@
+document.addEventListener('click', function(e){
+    if (e.target.closest('.header-navbar-toggle')) {
+        document.getElementsByClassName('header-navbar')[0].classList.toggle('active')
+        // $('.header-navbar-menu').css('display', 'flex');
+        // $('.header-navbar-menu').css('flex-direction', 'column');
+    }
+});
+
+
 $(document).ready(function(){
     $('.users').slick()({
         prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
