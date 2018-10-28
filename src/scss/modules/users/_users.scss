@@ -1,41 +1,42 @@
 .section-users {
-.container {
-  //.slider {
-  //  width: 100vw;
-    .users {
-   text-align: center;
-   margin: 40px 0;
-      //overflow: hidden;
-      //display: flex;
-      //justify-content: center;
-      //flex-direction: column;
-      //flex-wrap: wrap;
-      //align-items: center;
-      &__nick {
-        display: block;
-        margin: 20px;
-      }
-      &__heading {
-        //display: block;
-      }
-      .slick-slide
-      {
-        width: 100vw;
-      }
-      .slick-track {
-        width: 50px
-      }
+  .container {
+    .slider {
+      width: 80vw;
+      margin: 0 auto;
+      .users {
+     text-align: center;
+     margin: 40px 0;
+        //overflow: hidden;
+        //display: flex;
+        //justify-content: center;
+        //flex-direction: column;
+        //flex-wrap: wrap;
+        //align-items: center;
+        &__nick {
+          display: block;
+          margin: 20px;
+        }
+        &__heading {
+          //display: block;
+        }
+        .slick-slide
+        {
+          width: 100vw;
+        }
+        .slick-track {
+          width: 50px
+        }
 
-      &__img {
-        display: inline-block;
+        &__img {
+          display: inline-block;
 
-      }
-      &__text {
-        //display: inline-block;
-        width: 60vw;
-        margin: 0 auto;
+        }
+        &__text {
+          //display: inline-block;
+          width: 60vw;
+          margin: 0 auto;
+        }
       }
     }
   }
 }
-//}
