@@ -1,7 +1,10 @@
 @import "common/variables";
 @import "common/reset-src";
-//@import "common/mixins";
+@import "../vendors/slick/slick";
+@import "../vendors/slick/slick-theme";
 
+
+//@import "common/mixins";
 @import "modules/features/features";
 @import "modules/users/users";
 @import "modules/footer/footer";

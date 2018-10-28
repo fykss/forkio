@@ -73,19 +73,9 @@ gulp.task('css', function () {
         .pipe(gulp.dest(path.dist.css));
 });
 
-
-
-// gulp.task('js', function () {
-//     return gulp.src(path.src.js) //Находит script.js файл
-//         .pipe(rigger())
-//         .pipe(plumber())
-//         .pipe(uglify()) //Сжатие js
-//         .pipe(gulp.dest(path.dist.js)) //Выплюнем готовый файл в build
-// });
-
 gulp.task('js', function () {
     return gulp.src(['node_modules/jquery/dist/jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/slick-carousel/slick/slick.js',
         './src/js/script/script.js']) //Находит main.js файл
         .pipe(rigger())
         .pipe(plumber())
@@ -106,17 +96,17 @@ gulp.task('img', function(){
         .pipe(gulp.dest(path.dist.img))
 });
 
-gulp.task('copy', function () {
-    gulp.src('./src/vendors/slick/**/*.*')
-        .pipe(gulp.dest('./dist/slick'));
-});
+// gulp.task('copy', function () {
+//     gulp.src('./src/vendors/slick/**/*.*')
+//         .pipe(gulp.dest('./dist/slick'));
+// });
 
 gulp.task('build', function () {
-    runSequence('clean', ['html', 'copy', 'css', 'js', 'img']);
+    runSequence('clean', ['html', 'css', 'js', 'img']);
 });
 
 gulp.task('dev', function (){
-    runSequence('clean', ['html', 'copy', 'css', 'js', 'img'], function(){
+    runSequence('clean', ['html', 'css', 'js', 'img'], function(){
         browserSync.init({
             server: path.dist.server
         });
