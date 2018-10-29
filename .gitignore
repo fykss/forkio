@@ -10,7 +10,8 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
-/dist
+dist
+node_modules
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
