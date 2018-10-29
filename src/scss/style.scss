@@ -1,4 +1,4 @@
-
+@import "common/variables";
 @import "common/reset-src";
 @import "common/variables";
 @import "../scss/common/mixin";
@@ -6,6 +6,7 @@
 @import "../vendors/slick/slick";
 @import "../vendors/slick/slick-theme";
 
+@import "modules/header";
 @import "modules/features/features";
 @import "modules/users/users";
 @import "modules/footer/footer";
