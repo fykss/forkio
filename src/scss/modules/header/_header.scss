@@ -119,12 +119,16 @@
               }
             }
           }
+
           .active {
             .header__navbar-nav-toggle {
 
-              .line:first-child{
+              .line:first-child {
                 width:26px;
               }
+            }
+            .menu {
+              right: 0;
             }
           }
         }
