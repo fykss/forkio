@@ -96,10 +96,6 @@ gulp.task('img', function(){
         .pipe(gulp.dest(path.dist.img))
 });
 
-// gulp.task('copy', function () {
-//     gulp.src('./src/vendors/slick/**/*.*')
-//         .pipe(gulp.dest('./dist/slick'));
-// });
 
 gulp.task('build', function () {
     runSequence('clean', ['html', 'css', 'js', 'img']);

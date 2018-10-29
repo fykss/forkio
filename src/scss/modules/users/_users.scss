@@ -1,42 +1,103 @@
+@media only screen and (max-width: 320px) {
+  .section-features {
+    display: none;
+  }
+}
+
 .section-users {
   .container {
     .slider {
       width: 80vw;
       margin: 0 auto;
+      padding-top: 63px;
       .users {
-     text-align: center;
-     margin: 40px 0;
-        //overflow: hidden;
+        text-align: center;
+        //margin: 40px 0;
+        //font-family: Montserrat;
         //display: flex;
         //justify-content: center;
         //flex-direction: column;
         //flex-wrap: wrap;
         //align-items: center;
-        &__nick {
-          display: block;
-          margin: 20px;
-        }
-        &__heading {
-          //display: block;
-        }
-        .slick-slide
-        {
-          width: 100vw;
-        }
-        .slick-track {
-          width: 50px
+        //width: 100vw;
+
+        .users-about {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+          //width: 40vw;
+
+
+          .users__author {
+            .users__img {
+              //background-image: url(/src/img/users/userpic.png);
+              //background-position: center;
+              //background-repeat: no-repeat;
+              ////background-size: cover;
+              //height: 100%;
+
+              .users-img__img {
+                //display: inline-block;
+              }
+            }
+            .users__heading {
+              color: #474747;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 32px;
+              margin-top: 20px;
+            }
+
+            .users__nick {
+              margin-bottom: 20px;
+              color: $purple;
+            }
+          }
+
+            .users-comment {
+              width: 70vw;
+
+              .users__text {
+                width: 60vw;
+                margin: 0 auto;
+                font-family: Lato;
+                font-size: 17px;
+                color: $darkText;
+              }
+              .users__text--violet {
+                color: $purple;
+              }
+              .users__time-post {
+                font-family: Montserrat;
+                color: $greyText;
+                line-height: 32px;
+              }
+            }
+          }
         }
 
-        &__img {
-          display: inline-block;
+      .social-links {
+        .social-button {
+          .social-btn {
+            //.social-btn__github {
+            //  @include button-bg(#f3f3f3);
 
-        }
-        &__text {
-          //display: inline-block;
-          width: 60vw;
-          margin: 0 auto;
+          }
+          &__twitter {
+
+          }
+
+            &__facebook {
+
+
+            }
+          }
         }
       }
+      }
     }
-  }
-}
+  //}
+
+
