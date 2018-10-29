@@ -78,11 +78,13 @@
               }
             }
 
+
+
             .menu {
               position: absolute;
               top: 103px;
-              left: 0;
-              //right: -400px;
+              //left: 0;
+              right: -400px;
               transition: all 0.4s linear;
               width: 100%;
               height: 400px;
@@ -90,13 +92,45 @@
               display: flex;
               flex-direction: column;
               justify-content: space-around;
+
+              .menu__item {
+
+                .menu__link {
+                  font-size: 30px;
+                  color: #ffffff;
+                  font-weight: 400;
+                  height: 99px;
+                  padding-left: 22px;
+                  border-bottom: 1px Solid #3b3b3b;
+                }
+
+                .menu__link a:hover::before {
+                  content: '';
+                  width: 4px;
+                  height: 53px;
+                  position: absolute;
+                  left: 0;
+                  background-color: $purple;
+                }
+
+                .menu__link:hover {
+                  color: $purple;
+                }
+              }
+            }
+          }
+          .active {
+            .header__navbar-nav-toggle {
+
+              .line:first-child{
+                width:26px;
+              }
             }
           }
         }
       }
     }
   }
-
 
   .active .line:nth-of-type(1) {
     transform: rotate(45deg);
@@ -108,36 +142,17 @@
   .active .line:nth-of-type(3) {
     transform: rotate(-45deg);
   }
-
-
-
-
-
-  .header__navbar-nav-menu a {
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 400;
-    height: 99px;
-    padding-left: 22px;
-    border-bottom: 1px Solid #3b3b3b;
-  }
-
-  .header__navbar-nav-menu a:hover::before {
-    content: '';
-    width: 4px;
-    height: 53px;
-    position: absolute;
-    left: 0;
-    background-color: $purple;
-  }
-
-  .header__navbar-nav-menu a:hover {
-    color: $purple;
-  }
-
-  .active .header__navbar-nav-menu {
+  .active .menu {
     right: 0;
   }
+
+
+
+
+
+
+
+
 
   .header__navbar-nav-menu768 {
     display: none;
