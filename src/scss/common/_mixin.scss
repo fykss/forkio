@@ -1,31 +1,17 @@
-//@mixin flex {
-//  display: flex;
-//  justify-content: center;
-//  flex-wrap: wrap;
-//  align-items: center;
-//}
-//
-//
-//@mixin button-bg($bg) {
-//  background: $bg;
-//  &:hover {
-//    background:darken($bg,8%);
-//    transition: all 0.3s ease;
-//  }
-//  &:active {
-//    background:darken($bg,25%);
-//  }
-//}
-//
-//.btn {
-//  color:white;
-//  text-decoration:none;
-//  padding:5px 10px;
-//  border-radius:4px;
-//  font-family: 'Poiret One', cursive;
-//  font-size:21px;
-//}
+@mixin btn-style($btn-color) {
+  background-color: $btn-color;
+  position: relative;
+  &:hover {
+    background: rgba(0,0,0,0);
+      color: $btn-color;
+      box-shadow: inset 0 0 0 3px $btn-color;
+  }
+  &:before {
+      font-family: $FontAwesomeBrands;
+      position: absolute;
+      left: 25px;
+    }
+}
 
-//@mixin margin ($mg) {
-//  margin-left: ($mg);
-//}
+
+

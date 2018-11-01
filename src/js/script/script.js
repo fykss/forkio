@@ -69,3 +69,23 @@ $(document).ready(function(){
 
     });
 });
+
+
+
+// window.onresize = function(event) {
+//     if (event.currentTarget.outerWidth < 320) {
+//         $("section").hide();
+//     }
+// };
+
+// window.onresize = function(event) {
+//     if(event.currentTarget.outerWidth > 319){
+//         console.info("hiding");
+//         $(".fa-10x").hide();
+//         // $("header, section, footer").not("section.less320").show();
+//     }else{
+//         console.info("showing");
+//         $(".fa-10x").show().css({'color': '#8d81ac'});
+//     }
+// };
+

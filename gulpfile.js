@@ -95,14 +95,18 @@ gulp.task('img', function(){
         }))
         .pipe(gulp.dest(path.dist.img))
 });
+gulp.task('fonts', function() {
+    return gulp.src(['./src/fonts/webfonts/*.*'])
+        .pipe(gulp.dest('./dist/fonts'));
+});
 
 
 gulp.task('build', function () {
-    runSequence('clean', ['html', 'css', 'js', 'img']);
+    runSequence('clean', ['html', 'css', 'js', 'img', 'fonts']);
 });
 
 gulp.task('dev', function (){
-    runSequence('clean', ['html', 'css', 'js', 'img'], function(){
+    runSequence('clean', ['html', 'css', 'js', 'img', 'fonts'], function(){
         browserSync.init({
             server: path.dist.server
         });
