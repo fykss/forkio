@@ -46,7 +46,6 @@
 
           &-editor {
           width: 100%;
-            //text-align: right;
             margin: 13px 0 13px 0;
 
             &__img {
@@ -103,7 +102,6 @@
 
 @media only screen and (min-width: 481px) {
   .section-features {
-    //overflow: hidden;
     .container {
       .features {
         .features-content {
@@ -124,7 +122,6 @@
               }
               &__text {
                 margin: 0 20px 14px 20px;
-
               }
             }
           }
