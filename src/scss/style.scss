@@ -2,13 +2,19 @@
 @import "common/reset-src";
 @import "common/variables";
 @import "../scss/common/mixin";
+@import "../scss/libs/fontawesome/fontawesome";
+@import "../scss/libs/fontawesome/regular";
+@import "../scss/libs/fontawesome/solid";
+@import "../scss/libs/fontawesome/brands";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 @import "../vendors/slick/slick";
 @import "../vendors/slick/slick-theme";
 
-@import "modules/header/header";
-@import "modules/features/features";
-@import "modules/users/users";
-@import "modules/footer/footer";
-
-
+@import "modules/less320";
+@import "modules/header";
+@import "modules/features";
+@import "modules/users";
+@import "modules/subscription";
+@import "modules/footer";
