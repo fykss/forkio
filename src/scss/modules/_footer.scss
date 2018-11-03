@@ -123,7 +123,7 @@
             width: 180px;
             &:hover {
               .logo__img {
-                background-image: url('../../img/logo_hover.png');
+                background-image: url('../img/logo_hover.png');
               }
               .logo__text {
                 color: $purple;
@@ -135,7 +135,7 @@
             &__img {
               width: 43px;
               height: 41px;
-              background-image: url('../../img/Logo.png');
+              background-image: url('../img/Logo.png');
             }
             &__text {
               margin: 0 0 0 16px;
