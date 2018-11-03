@@ -50,7 +50,6 @@
           .header__navbar-button:hover {
             background-color: #fff;
             color: $purple;
-
           }
 
           .header__navbar-nav {
@@ -153,7 +152,6 @@
             margin-left: 20px;
 
             .header__logo-text {
-              display: inline;
               padding-left: 13px;
               font-family: 'Lato', sans-serif;
               font-size: 24px;
@@ -210,13 +208,13 @@
 
       .container {
         .header__navbar {
-
+          margin-bottom: 35px;
+          
           .header__navbar-logo {
             margin-left: 10px;
-
-            .header__logo-img {
-              width: 43px;
-              height: 41px;
+            &:hover {
+              filter:brightness(0) invert(1);
+              color: #fff;
             }
           }
 
@@ -229,9 +227,11 @@
           }
 
           .header__navbar-nav {
-            order: 2;
-            display: flex;
-
+            position: absolute;
+            width: 100%;
+            margin: 0 auto;
+            top: 40px;
+            left: -7px;
 
             .header__navbar-nav-toggle {
               display: none;
@@ -239,9 +239,15 @@
 
             .menu {
               all: inherit;
+              position: relative;
+              display: flex;
+              max-width: 600px;
+              justify-content: space-between;
+              padding-left: 15px;
 
               .menu__item {
-                all: inherit;
+                list-style: none;
+                margin: 0 auto;
 
                 .menu__link {
                   all: inherit;
@@ -249,7 +255,8 @@
                   color: $purple;
                   font-weight: 700;
                   cursor: pointer;
-                  margin: 0 24px;
+                  text-align: center;
+
                 }
                 .menu__link:hover {
                   color: #fff;
@@ -276,11 +283,19 @@
         max-width: 1180px;
 
         .header__navbar {
+          margin: 0;
 
           .header__navbar-nav {
+            all: inherit;
+
             .menu {
-              position: relative;
-              left: 42px;
+              width: 500px;
+              display: flex;
+              justify-content: space-between;
+
+              .menu__item {
+
+              }
             }
           }
         }
