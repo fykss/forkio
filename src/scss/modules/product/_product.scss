@@ -31,13 +31,13 @@
         }
 
         .product-links {
-          margin: 10px 0 50px 0;
+          margin: 10px 0 85px 0;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
 
           .product-links__item {
-            margin-right: 5px;
+            margin-right: 4px;
             margin-left: 5px;
             margin-top: 30px;
 
@@ -47,6 +47,7 @@
               color: #24292e;
               font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe
               UI Emoji,Segoe UI Symbol;
+              font-size: 14px;
               font-weight: 600;
               padding: 3px 10px;
               border: 1px Solid;
@@ -75,6 +76,7 @@
               color: #24292e;
               font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe
               UI Emoji,Segoe UI Symbol;
+              font-size: 14px;
               font-weight: 600;
               padding: 3px 10px;
               border: 1px Solid;
@@ -89,6 +91,75 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .product {
+    .container {
+      .product__content {
+        .product__content-title {
+          .product__content-title-name {
+            font-size: 42px;
+            line-height: 50px;
+            margin-bottom: 40px;
+          }
+          .product__content-title-text {
+            font-size: $font;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .product {
+    .container {
+      .product__content {
+        padding-top: 75px;
+
+        .product__content-title {
+          .product__content-title-name {
+            margin-bottom: 20px;
+          }
+
+          .product__content-title-text {
+            font-size: 21px;
+            line-height: 32px;
+          }
+        }
+
+        .product-links {
+          margin: 0 0 100px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .product {
+    .container {
+      .product__content {
+        padding-top: 45px;
+
+        .product__content-title {
+          .product__content-title-name {
+            font-size: 54px;
+            margin-bottom: 25px;
+          }
+          .product__content-title-text {
+            margin: 0 100px;
+          }
+        }
+
+        .product-links {
+          margin: 5px 0 75px;
         }
       }
     }
