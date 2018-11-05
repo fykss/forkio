@@ -1,0 +1,83 @@
+@media only screen and (min-width: 320px) {
+  .comments {
+    width: 100%;
+    height: 1500px;
+    background-color: #4b3b4e;
+    text-align: center;
+
+    .comments-bg {
+      background-image: url("../../img/comments-brand/bg-comments.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 1144px;
+      position: relative;
+      top: 15px;
+
+
+      .container {
+        padding: 0 10px;
+
+        .comments-title {
+          font-family: $font-family;
+          font-size: 36px;
+          color: #ffffff;
+          font-weight: 700;
+          line-height: 60px;
+          padding-top: 30px;
+        }
+        .comments-brand {
+          display: flex;
+          flex-wrap: wrap;
+          //justify-content: space-between;
+          justify-content: center;
+
+          .comments-brand-item {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //margin: 20px 0;
+
+            .img-wrapper {
+              height: 58px;
+              display: flex;
+              align-items: center;
+              margin: 25px 0;
+            }
+
+            .comments-brand-item__img {
+
+            }
+            .comments-brand-item__text {
+              font-family: 'Lato', sans-serif;
+              color: #ffffff;
+              font-size: $font;
+              font-weight: 700;
+              font-style: italic;
+              line-height: 22px;
+              margin: 0 14px 5px;
+              height: 86px;
+              max-width: 320px;
+            }
+          }
+        }
+        .comments-brand-bottom {
+          .comments-brand-text {
+            font-family: 'Lato', sans-serif;
+            color:  rgba(162, 145, 165, 0.8);
+            font-size: 14px;
+            line-height: 21px;
+            display: none;
+          }
+          .comments-brand-bottom-line {
+            width: 280px;
+            height: 2px;
+            background-color: #645766;
+            margin: 15px auto 0;
+          }
+        }
+      }
+    }
+  }
+}
