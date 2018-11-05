@@ -1,0 +1,169 @@
+@media only screen and (min-width: 320px) {
+  .product {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .product__content {
+        font-family: $Montserrat;
+        padding-top: 40px;
+        text-align: center;
+        text-decoration: none;
+
+        .product__content-title {
+          padding-left: 15px;
+          padding-right: 15px;
+
+          .product__content-title-name {
+            font-size: 26px;
+            color: #635c73;
+            font-weight: 700;
+            line-height: 42px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+          .product__content-title-text {
+            font-family: $Lato;
+            color: #323232;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+
+        .product-links {
+          margin: 10px 0 85px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .product-links__item {
+            margin-right: 4px;
+            margin-left: 5px;
+            margin-top: 30px;
+
+
+            .product-links__action {
+              text-decoration: none;
+              color: #24292e;
+              font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe
+              UI Emoji,Segoe UI Symbol;
+              font-size: 14px;
+              font-weight: 600;
+              padding: 3px 10px;
+              border: 1px Solid;
+              border-radius: 3px;
+              border-color: rgba(27, 31, 35, 0.13);
+              border-bottom-right-radius: 0;
+              border-top-right-radius: 0;
+              background-color: #eff3f6;
+              background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+
+              &:hover {
+                background-color: #e6ebf1;
+                background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+                border-color: rgba(27,31,35,.35);
+              }
+
+              .octicon {
+                position: relative;
+                top: 12%;
+                margin-right: 5px;
+              }
+            }
+
+            .product-links__count {
+              text-decoration: none;
+              color: #24292e;
+              font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe
+              UI Emoji,Segoe UI Symbol;
+              font-size: 14px;
+              font-weight: 600;
+              padding: 3px 10px;
+              border: 1px Solid;
+              border-radius: 3px;
+              border-color: rgba(27, 31, 35, 0.13);
+              border-left: 0;
+              border-bottom-left-radius: 0;
+              border-top-left-radius: 0;
+
+              &:hover {
+                color: #0366d6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  .product {
+    .container {
+      .product__content {
+        padding-top: 30px;
+
+        .product__content-title {
+          .product__content-title-name {
+            font-size: 42px;
+            line-height: 50px;
+            margin-bottom: 40px;
+          }
+          .product__content-title-text {
+            font-size: $font;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .product {
+    .container {
+      .product__content {
+        padding-top: 50px;
+
+        .product__content-title {
+          .product__content-title-name {
+            margin-bottom: 20px;
+          }
+
+          .product__content-title-text {
+            font-size: 21px;
+            line-height: 32px;
+          }
+        }
+
+        .product-links {
+          margin: 0 0 100px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .product {
+    .container {
+      .product__content {
+        padding-top: 25px;
+
+        .product__content-title {
+          .product__content-title-name {
+            font-size: 54px;
+            margin-bottom: 25px;
+          }
+          .product__content-title-text {
+            margin: 0 100px;
+          }
+        }
+
+        .product-links {
+          margin: 5px 0 75px;
+        }
+      }
+    }
+  }
+}
