@@ -79,7 +79,6 @@
             .menu {
               position: absolute;
               top: 103px;
-              //left: 0;
               right: -400px;
               transition: all 0.4s linear;
               width: 100%;
@@ -96,10 +95,12 @@
                   font-size: 30px;
                   color: #ffffff;
                   font-weight: 400;
-                  height: 100px;
+                  height: 99px;
                   display: flex;
                   align-items: center;
                   padding-left: 22px;
+                  border-bottom: 2px Solid;
+                  border-color: #3b3b3b;
                 }
 
                 .menu__link:hover::before {
@@ -183,7 +184,8 @@
                   font-size: $font*2;
                   height: 122px;
                   padding-left: 32px;
-                  border-bottom: 2px Solid #3b3b3b;
+                  border-bottom: 2px Solid;
+                  border-color: #3b3b3b;
                 }
               }
             }
@@ -199,7 +201,6 @@
     }
   }
 }
-
 
 @media only screen and (min-width: 481px) {
   body {
@@ -292,10 +293,6 @@
               width: 500px;
               display: flex;
               justify-content: space-between;
-
-              .menu__item {
-
-              }
             }
           }
         }

@@ -8,7 +8,6 @@
         background-position-y: 74%;
         font-family: $font-family;
         text-align: center;
-        margin-bottom: 45px;
 
         .banner__content-title {
           color: #fff;
@@ -35,34 +34,38 @@
           text-transform: uppercase;
         }
       }
-      .banner-btn {
-        position: relative;
-        top: 404px;
+    }
 
-        .banner-button {
-          width: 290px;
-          height: 45px;
-          color: #fff;
-          font-size: $font+2;
-          font-weight: 700;
-          background-color: $purple;
-          border-radius: 25px;
-          border: 0;
-          cursor: pointer;
-          margin-bottom: 10px;
+    .banner-btn {
+      text-align: center;
+      position: relative;
+      top: -24px;
 
-          &:hover {
-            background-color: #fff;
-            color: $purple;
-            border: 1px Solid;
-            border-color: $purple;
 
-          }
+      .banner-button {
+        width: 290px;
+        height: 45px;
+        color: #fff;
+        font-size: $font+2;
+        font-weight: 700;
+        background-color: $purple;
+        border-radius: 25px;
+        border: 0;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &:hover {
+          background-color: #fff;
+          color: $purple;
+          border: 1px Solid;
+          border-color: $purple;
+
         }
-        .banner-btn-text {
-          color: #848e97;
-          font-size: 14px;
-        }
+      }
+      .banner-btn-text {
+        font-family: $font-family;
+        color: #848e97;
+        font-size: 14px;
       }
     }
   }
@@ -72,9 +75,7 @@
   .banner {
     .container {
       .banner__content {
-
         height: 729px;
-        margin-bottom: 65px;
 
         .banner__content-title {
           padding-top: 90px;
@@ -86,16 +87,16 @@
           padding-right: 50px;
           font-size: $font+4;
         }
-        .banner-btn {
-          top: 426px;
+      }
+      .banner-btn {
+        top: -33px;
 
-          .banner-button {
-            width: 390px;
-            height: 62px;
-            font-size: $font+5;
-            border-radius: 35px;
-            margin-bottom: 17px;
-          }
+        .banner-button {
+          width: 390px;
+          height: 62px;
+          font-size: $font+5;
+          border-radius: 35px;
+          margin-bottom: 17px;
         }
       }
     }
