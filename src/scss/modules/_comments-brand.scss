@@ -1,7 +1,7 @@
 @media only screen and (min-width: 320px) {
   .comments {
     width: 100%;
-    height: 1470px;
+    height: 1610px;
     background-color: #4b3b4e;
     text-align: center;
 
@@ -29,7 +29,6 @@
         .comments-brand {
           display: flex;
           flex-wrap: wrap;
-          //justify-content: space-between;
           justify-content: center;
 
           .comments-brand-item {
@@ -37,7 +36,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            //margin: 20px 0;
 
             .img-wrapper {
               height: 58px;
@@ -47,7 +45,7 @@
             }
 
             .comments-brand-item__text {
-              font-family: 'Lato', sans-serif;
+              font-family: $Source;
               color: #ffffff;
               font-size: $font;
               font-weight: 700;
@@ -81,7 +79,7 @@
 
 @media only screen and (min-width: 401px) {
   .comments {
-    height: 1500px;
+    height: 1540px;
 
     .comments-bg {
       .container {
@@ -109,8 +107,7 @@
 
 @media only screen and (min-width: 481px) {
   .comments {
-    all: inherit;
-    text-align: center;
+    height: 970px;
 
     .comments-bg {
       height: 885px;
@@ -130,6 +127,7 @@
             margin: 30px 33px 0;
           }
           .comments-brand-bottom-line {
+            width: 690px;
             margin: 10px auto 0;
           }
         }
@@ -140,6 +138,8 @@
 
 @media only screen and (min-width: 993px) {
   .comments {
+    height: 860px;
+
     .comments-bg {
       background-image: url("../../img/comments-brand/bg-comments-1200.jpg");
       height: 785px;
@@ -156,6 +156,10 @@
 
           .comments-brand-item {
             margin-top: 50px;
+
+            .comments-brand-item__text {
+              font-family: $Lato;
+            }
           }
         }
 

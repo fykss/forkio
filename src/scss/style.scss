@@ -8,6 +8,7 @@
 @import "../scss/libs/fontawesome/brands";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
 
 @import "../vendors/slick/slick";
 @import "../vendors/slick/slick-theme";
@@ -18,9 +19,9 @@
 @import "modules/users";
 @import "modules/subscription";
 @import "modules/footer";
-@import "modules/header/header";
-@import "modules/banner/banner";
-@import "modules/product/product";
+@import "modules/header";
+@import "modules/banner";
+@import "modules/product";
 @import "modules/_comments-brand";
 
 
