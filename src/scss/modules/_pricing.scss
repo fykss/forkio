@@ -1,0 +1,98 @@
+@media only screen and (min-width: 320px) {
+  .pricing {
+    height: 1610px;
+    background-color: #4b3b4e;
+    text-align: center;
+
+    .container {
+      .pricing__content {
+        background-image: url("../../img/bg-pricing.png");
+        height: 888px;
+        font-family: $Montserrat;
+        color: #ffffff;
+
+        .pricing-title {
+          .pricing-title-name {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 42px;
+            margin-bottom: 40px;
+          }
+        }
+
+        .pricing-table {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .pricing-item {
+            width: 257px;
+            height: 457px;
+            background-color:  rgba(255, 255, 255, 0.11);
+
+            .pricing-name {
+              font-size: 24px;
+              text-transform: uppercase;
+              width: 257px;
+              height: 97px;
+              background-color:  rgba(255, 255, 255, 0.06);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .pricing-item__info {
+              .pricing-item__price {
+                font-size: 60px;
+                margin: 32px 0 17px 0;
+
+                .pricing-item__price-number {
+                  font-weight: 700;
+                }
+              }
+              .pricing-item__info-small {
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+
+                &::after {
+                  content: "";
+                  background-color:  #8d81ac;
+                  width: 60px;
+                  height: 5px;
+                  display: block;
+                  position: relative;
+                  top: 36px;
+                  margin: 0 auto;
+                }
+              }
+              .pricing-item__license {
+                font-size: $font;
+                line-height: 27px;
+              }
+              .price-item__buy {
+                background-color:  rgba(255, 255, 255, 0.15);
+                border-radius: 25px;
+                width: 160px;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                margin: 0 auto;
+                position: relative;
+                top: 60px;
+
+                .price-item__buy-btn {
+                  font-size: 15px;
+                  text-transform: uppercase;
+                  color: #ffffff;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
