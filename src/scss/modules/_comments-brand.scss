@@ -1,6 +1,6 @@
 @media only screen and (min-width: 320px) {
   .comments {
-    height: 1530px;
+    height: 1460px;
     background-color: #4b3b4e;
     text-align: center;
 
@@ -24,6 +24,8 @@
           font-weight: 700;
           line-height: 60px;
           padding-top: 30px;
+          width: 270px;
+          margin: 0 auto;
         }
         .comments-brand {
           display: flex;
@@ -32,6 +34,7 @@
 
           .comments-brand-item {
             height: 200px;
+            width: 324px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,8 +54,9 @@
               font-style: italic;
               line-height: 23px;
               margin: 0 14px 5px;
-              height: 86px;
-              max-width: 320px;
+              //height: 86px;
+              //min-width: 250px;
+              max-width: 300px;
             }
           }
         }
@@ -78,7 +82,7 @@
 
 @media only screen and (min-width: 401px) {
   .comments {
-    height: 1540px;
+    height: 1470px;
 
     .comments-bg {
       .container {
@@ -86,6 +90,7 @@
           font-size: 42px;
           padding-top: 50px;
           padding-bottom: 50px;
+          width: 420px;
         }
         .comments-brand {
           .comments-brand-item {
@@ -106,7 +111,7 @@
 
 @media only screen and (min-width: 481px) {
   .comments {
-    height: 970px;
+    height: 885px;
 
     .comments-bg {
       background-image: url("../../img/comments-brand/bg-comments-768.jpg");
@@ -117,9 +122,16 @@
       .container {
         .comments-title {
           padding-top: 70px;
+          width: inherit;
+          padding-bottom: 10px;
+          height: 110px;
         }
         .comments-brand {
           justify-content: space-between;
+
+          .comments-brand-item {
+            margin: auto;
+          }
         }
         .comments-brand-bottom {
           .comments-brand-text {
@@ -138,7 +150,7 @@
 
 @media only screen and (min-width: 993px) {
   .comments {
-    height: 860px;
+    height: 823px;
 
     .comments-bg {
       background-image: url("../../img/comments-brand/bg-comments-1200.jpg");
@@ -149,6 +161,7 @@
           font-size: 48px;
           padding-top: 80px;
           padding-bottom: 0;
+          height: auto;
         }
         .comments-brand {
           max-width: 1200px;

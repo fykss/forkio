@@ -1,6 +1,6 @@
 @media only screen and (min-width: 320px) {
   .pricing {
-    height: 2190px;
+    height: 2260px;
     background-color: #4b3b4e;
     text-align: center;
 
@@ -16,6 +16,8 @@
         color: #ffffff;
 
         .pricing-title {
+          padding-top: 70px;
+
           .pricing-title-name {
             font-size: 28px;
             font-weight: 700;
@@ -179,6 +181,16 @@
             }
           }
         }
+
+        .pricing__content-bottom {
+          width: 865px;
+          font-family: $Source;
+          color:  rgba(162, 145, 165, 0.8);
+          font-size: 14px;
+          line-height: 21px;
+          margin: 10px auto 0;
+          display: none;
+        }
       }
     }
   }
@@ -186,7 +198,7 @@
 
 @media only screen and (min-width: 401px) {
   .pricing {
-    height: 2230px;
+    height: 2310px;
 
     .container {
       .pricing__content {
@@ -206,12 +218,16 @@
 
 @media only screen and (min-width: 481px) {
   .pricing {
-    height: 1250px;
+    height: 1330px;
 
     .container {
       .pricing__content {
         background-image: url("../../img/pricing/bg-pricing-768.png");
         height: 1250px;
+
+        .pricing-title {
+          padding-top: 80px;
+        }
 
         .pricing-table {
           margin: 0 auto;
@@ -224,6 +240,35 @@
             position: relative;
             top: -48px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .pricing {
+    height: 900px;
+
+    .container {
+      .pricing__content {
+        background-image: url("../../img/pricing/bg-pricing-1200.png");
+        height: 813px;
+
+        .pricing-title {
+          padding-top: 30px;
+
+          .pricing-title-name {
+            margin-bottom: 110px;
+          }
+        }
+
+        .pricing-table {
+          max-width: 1200px;
+        }
+
+        .pricing__content-bottom {
+          display: block;
         }
       }
     }
