@@ -112,7 +112,7 @@ gulp.task('dev', function (){
         });
 
         gulp.watch(path.src.scss_modules, ['css']).on('change',browserSync.reload);
-        gulp.watch(path.src.html, ['html']).on('change', browserSync.reload)
+        gulp.watch(path.src.html, ['html']).on('change', browserSync.reload);
         gulp.watch(path.src.js, ['js']).on('change', browserSync.reload)
     })
 });
