@@ -6834,7 +6834,7 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (min-width: 320px) {
   .banner .container .banner__content {
-    background-image: url("../../dist/img/background-banner.png");
+    background-image: url("../img/background-banner.png");
     height: 614px;
     background-position-x: center;
     background-position-y: 74%;
