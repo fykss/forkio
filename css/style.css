@@ -6834,7 +6834,7 @@ readers do not read off random characters that represent icons */
 
 @media only screen and (min-width: 320px) {
   .banner .container .banner__content {
-    background-image: url("../../img/background-banner.png");
+    background-image: url("../img/background-banner.png");
     height: 614px;
     background-position-x: center;
     background-position-y: 74%;
@@ -7217,7 +7217,7 @@ readers do not read off random characters that represent icons */
     height: 885px;
   }
   .comments .comments-bg {
-    background-image: url("../../img/comments-brand/bg-comments-768.jpg");
+    background-image: url("../img/comments-brand/bg-comments-768.jpg");
     height: 825px;
     background-position: center;
     top: 0;
@@ -7251,7 +7251,7 @@ readers do not read off random characters that represent icons */
     height: 823px;
   }
   .comments .comments-bg {
-    background-image: url("../../img/comments-brand/bg-comments-1200.jpg");
+    background-image: url("../img/comments-brand/bg-comments-1200.jpg");
     height: 785px;
   }
   .comments .comments-bg .container .comments-title {
@@ -7287,7 +7287,7 @@ readers do not read off random characters that represent icons */
     text-align: center;
   }
   .pricing .container .pricing__content {
-    background-image: url("../../img/pricing/bg-pricing-320.png");
+    background-image: url("../img/pricing/bg-pricing-320.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 888px;
@@ -7494,7 +7494,7 @@ readers do not read off random characters that represent icons */
     height: 2310px;
   }
   .pricing .container .pricing__content {
-    background-image: url("../../img/pricing/bg-pricing-480.png");
+    background-image: url("../img/pricing/bg-pricing-480.png");
   }
   .pricing .container .pricing__content .pricing-title .pricing-title-name {
     font-size: 42px;
@@ -7508,7 +7508,7 @@ readers do not read off random characters that represent icons */
     height: 1330px;
   }
   .pricing .container .pricing__content {
-    background-image: url("../../img/pricing/bg-pricing-768.png");
+    background-image: url("../img/pricing/bg-pricing-768.png");
     height: 1250px;
   }
   .pricing .container .pricing__content .pricing-title {
@@ -7532,7 +7532,7 @@ readers do not read off random characters that represent icons */
     height: 900px;
   }
   .pricing .container .pricing__content {
-    background-image: url("../../img/pricing/bg-pricing-1200.png");
+    background-image: url("../img/pricing/bg-pricing-1200.png");
     height: 813px;
   }
   .pricing .container .pricing__content .pricing-title {
